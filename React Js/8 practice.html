@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <style>
+        .container{
+            width: 300px;
+            height: 400px;
+            border: 2px solid black;
+            padding: 20px;
+            margin:10px auto;
+            text-align: center;
+            background-color: bisque;
+        }
+        .center{
+            display: flex;
+        }
+    </style>
+    <body>
+        <div id="root"></div>
+    <script type="text/babel">
+           function createimg(title){
+            return(
+                <div className="container">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrWBPdG_uk0RryCWs5R-epy5jrZogfFiccfA&s" width="300px" height="300px"/>
+                <h3>{title}</h3>
+                <p>My Hero</p>
+                <button>Profile</button>
+                </div>
+            );
+           }
+           function name(){
+            return(
+                <div className="center">
+                    {createimg("N.T.Ramarao")}
+                    {createimg("N.T.R")}
+                    {createimg("N.T.R")}
+                        </div>
+            )
+           }
+           ReactDOM.render(name(),document.getElementById("root"));
+    </script>
+    </body>
+</html> 

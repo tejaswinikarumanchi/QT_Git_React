@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script>
+     var imgReactElement=React.createElement("img",{src:"https://media.istockphoto.com/id/1459952195/photo/beautiful-spring-garden-with-flowers-and-lawn-grass-3d-illustration.jpg?s=170667a&w=0&k=20&c=2XSdVSlT4IQk-m97EQnOV5_EgViSE8wBLYlOxdffbkE=",
+           width:"400px",
+        height:"400px",
+        // border:"2px solid black",
+        textAlign:"center",
+    });
+           var h1ReactElement=React.createElement("h1",{style:{marginBottom:"10px"}},"Garden");
+           var pReactElement=React.createElement("p",{style:{marginTop:"10px"}},"Tree");
+           var buttonReactElement=React.createElement("button",{style:{marginBottom:"10px",}},"button");
+         var div1=React.createElement("div",{style:{width:"480px",height:"550px",border:"2px solid blue",textAlign:"center",margin:"10px auto",padding:"10px"}},
+         [imgReactElement,h1ReactElement,pReactElement,buttonReactElement]);
+           ReactDOM.render(div1,document.getElementById("root"));
+         </script>
+    </body>
+</html>

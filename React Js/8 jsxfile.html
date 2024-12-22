@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .component{
+                width: 1200px;
+                border: 2px solid green;
+        box-shadow: 0 0 10px green;
+        margin: 30px auto;
+        padding: 20px;
+            }
+        </style>
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type="text/babel">
+            function createtag(title){
+                return(
+                    <div className="component">
+                        <h4>{title}</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat perferendis blanditiis hic! Optio odit deserunt enim recusandae, provident at assumenda, eius explicabo dicta sed corrupti totam repellendus eum nam vero.</p>
+                        </div>
+                );
+            }
+            function main(){
+                return(
+                <div>
+                    {createtag("HTML")}
+                    {createtag("CSS")}
+                    {createtag("JAVASCRIPT")}
+                        </div>
+                    );
+            }
+            ReactDOM.render(main(),document.getElementById("root"));
+        </script>
+    </body>

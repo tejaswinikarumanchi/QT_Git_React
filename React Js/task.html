@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script>
+           var h1ReactElement=React.createElement("h1");
+           var pReactElement=React.createElement("p",null,"Reactjs is a js");
+           var ImgReactElement=React.createElement("img",
+           {src:"https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630"});
+           ReactDOM.render([h1ReactElement,pReactElement,ImgReactElement],document.getElementById("root"));
+         </script>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+p
+{
+    /* font-size:80px; */
+    color:rgb(4,4,72);
+    border:5px solid red;
+    background-color: yellow;
+}
+
+@media (min-width: 500px) and (max-width: 800px){
+    p
+    {
+        background-color: red;
+    }
+}

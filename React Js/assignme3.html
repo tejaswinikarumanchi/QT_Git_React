@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+             .component{
+            width: 300px;
+            height: 300px;
+            padding: 20px;
+            margin:10px auto;
+            text-align: center;
+            justify-content:center;
+        }
+        .component1{
+            display: flex;
+        }
+    </style>
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+        <h1 style="text-align:center">Certifications from Indian Agile Board</h1>
+        <div id="root"></div>
+        <script type="text/babel">
+         function createElement(img,title){
+            return(
+                <div className="component">
+                    <img src={img} width="300px" height="300px"/>
+                    <h2>{title}</h2>
+                    </div>
+            );
+         }
+         function name(){
+            return(
+                <div className="component1">
+                    {createElement("https://qualitythought.in/wp-content/uploads/2024/04/WhatsApp-Image-2024-04-16-at-3.17.22-PM.jpeg.webp","Scrum Master")}
+                    {createElement("https://qualitythought.in/wp-content/uploads/2024/04/WhatsApp-Image-2024-04-16-at-3.13.18-PM.jpeg.webp","Scaled Aglied Certification")}
+                    {createElement("https://qualitythought.in/wp-content/uploads/2024/04/WhatsApp-Image-2024-04-16-at-3.08.18-PM-1.jpeg.webp","PMP Certification Course")}
+                    {createElement("https://qualitythought.in/wp-content/uploads/2024/05/istqb_certification.webp","ISTQB Certification")}
+                    </div>
+            );
+         }
+            ReactDOM.render(name(),document.getElementById("root"));
+            </script>
+            </body>
+            </html>

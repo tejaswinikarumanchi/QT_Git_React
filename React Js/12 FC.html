@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .container{
+width: 200px;
+height: 200px;
+padding: 20px;
+
+        }
+        .container1{
+            display: flex;
+            margin: 70px ;
+        }
+    </style>
+    <head>
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+    <body>
+        <h1 style="text-align: center;">LOVELY TO EACH OTHER</h1>
+        <div id="body"></div>
+<script type="text/babel">
+    function Createname(para){
+        return(
+     <div className="container">
+        <img src={para.image} width="200px" height="200px"/>
+        <h1>{para.name}</h1>
+    </div>
+        );
+    }
+    function App(){
+        return(
+        <div className="container1">
+            <Createname name="Teja" image="https://tinypng.com/images/social/website.jpg"/>
+            <Createname name="Teja" image="https://thumbs.dreamstime.com/b/bee-flower-27533578.jpg"/>
+            <Createname name="Akki" image="https://pe-images.s3.amazonaws.com/basics/cc/image-size-resolution/resize-images-for-print/image-cropped-8x10.jpg"/>
+            <Createname name="Akki" image="https://cdn.zeebiz.com/sites/default/files/styles/zeebiz_850x478/public/2023/02/09/226456-teddy-day.jpg?itok=dWtnYawC"/>
+            
+            </div>
+        );
+    }
+    ReactDOM.render(<App/>,document.getElementById("body"));
+</script>
+    </body>
+    </html>
+    

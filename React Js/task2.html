@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    </head>
+    <body>
+       <div id="root"></div>
+        <script>
+           var pElement=React.createElement("h1",null,"React js is very complex");
+           var ImgElement=React.createElement("img",
+           {src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxljCiU3pRUXpw-39aklTNk7BDV3G9Dn7ocw&s",});
+           var h1Element=React.createElement("div",null,"Reactjs");
+
+           var divElement=React.createElement("div",null,[ImgElement,h1Element,pElement,]);
+           ReactDOM.render(divElement,document.getElementById("root"));
+         </script>
+    </body>
+</html>                                                                                                             

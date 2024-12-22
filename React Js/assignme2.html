@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    </head>
+    <body>
+       <div id="root"></div>
+        <script>
+           var ImgElement=React.createElement("img",
+           {src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTikIepQ5uhP4qDypsjttFEl1PXjW23ujgojg&s",});
+           var h1Element=React.createElement("div",null,"Parrot");
+           var pElement=React.createElement("p",null,"parrot is a green in color");
+           var div1=React.createElement("div",{style:{width:"500",height:"500",textAlign:"center"}},ImgElement,h1Element,pElement);
+           
+
+           var ImgElement=React.createElement("img",
+           {src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTikIepQ5uhP4qDypsjttFEl1PXjW23ujgojg&s",});
+           var h1Element=React.createElement("div",null,"Parrot");
+           var pElement=React.createElement("p",null,"parrot is a green in color");
+
+           var div2=React.createElement("div",{style:{width:"500",height:"500",textAlign:"center"}},ImgElement,h1Element,pElement);
+           ReactDOM.render([div1,div2],document.getElementById("root"));
+         </script>
+    </body>
+</html>                                                                                                             
